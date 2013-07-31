@@ -9,11 +9,6 @@
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="themes/css/main.css" rel="stylesheet">
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
   </head>
 
@@ -21,40 +16,7 @@
 <div class="container">
   <!-- Navbar
     ================================================== -->
-    <div class="navbar">
-        <div class="container">
-          <button type="button"class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="row"><h1 class="loadhome span3"><a href="index.html"><img src="themes/css/images/bootstrap_clinic_logo copy.png" alt="bootstrappage clinic templates"/></a></h1>
-			  <div class="nav-collapse collapse"><br/>
-				<ul class="nav pull-right">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li class="" ><a href="aboutus.html">Abount us</a></li>
-					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services & Charges <b class="caret"></b></a>
-					  <ul class="dropdown-menu">
-					  <li class="nav-header">Medical Department</li>
-						<li><a href="treatments.html">Charges</a></li>
-						<li><a href="#">one</a></li>
-						<li><a href="#">Two</a></li>
-						<li class="divider"></li>
-						<li class="nav-header">Department</li>
-						<li><a href="#">three</a></li>
-						<li><a href="#">four</a></li>
-					  </ul>
-					</li>
-					<li class=""><a href="contact.html">Contact</a></li>
-                                        <li class=""><a href="login.html">Login</a></li>
-					<li><a href="booking.html" style="padding-top:0"><span class="btn pull-right btn-success" style="margin-top:0"> Order Now </span></a></li>
-				</ul>
-			  </div>
-		  </div>
-        </div>
-    </div>
-	<div class="label label-warning" style="display:block;"> SERVICE AVAILABLE 24/7 :  Call 01234567891	</div>
+    <?php include_once 'header.php';?>
 <!-- ================Carousel and pages======= -->
 		<div id="myCarousel" class="carousel slide">
         <div class="carousel-inner">
@@ -196,17 +158,7 @@
 		</div>
  <!-- Footer
  ================================================== -->
-<footer class="footer">
-	<div class="container">
-		<div class="span4 pull-right">
-			<a href="#"><img style="max-width:45px" src="themes/css/images/facebook.png" title="facebook"></a>
-			<a href="#"><img style="max-width:45px" src="themes/css/images/twitter.png" title="twitter"></a>
-			<a href="#"><img style="max-width:45px" src="themes/css/images/rss.png" title="rss"></a>
-			<a href="#"><img style="max-width:45px" src="themes/css/images/youtube.png" title="youtube"></a>
-		</div>
-		<p>&copy;2012 <br/><em> Copyright informations <a href="#">Terms and Conditions, </a> <a href="comingsoon.html">Coming soon page</a></em></p>
-	</div>
-</footer>
+<?php include_once 'footer.php';?>
 <br/>
 </div><!-- /container -->
     <!-- Le javascript
