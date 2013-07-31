@@ -1,0 +1,31 @@
+h1, h5, h6,h3{font-family: 'Jura', sans-serif; }
+a,a:hover{color: #FF1DA2;}
+.navbar {margin-bottom: 8px;}
+.navbar .nav > li > a {text-shadow: 0 0 0 black; font-size:16px; }
+.navbar .nav > li > a:hover{color: #FF1DA2; }
+.navbar .nav .active > a, .navbar .nav .active > a:hover {background-color: transparent; color: #FF1DA2; text-shadow: 0 0 0 black; /*  border-bottom:4px solid #FF1DA2; */}
+.navbar .divider-vertical {width: 0px;height: 23px;margin: 9px;}
+hr.soften {margin: 8px 0 18px;}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle{background:none; color: #FF1DA2;}
+.dropdown-menu li > a:hover{color: #FF1DA2; background:none}
+.carousel{background: url(images/shadowsReverse.png) no-repeat center bottom;padding-bottom: 31px;}
+.carousel-control,.carousel-control:hover {background:transparent; color:#ff1da2}
+.carousel-caption {padding: 0;background: #efefef;color: #444;bottom: auto;top: 8%;width: 30%;right: 10%;left: auto;border-radius: 8px;}
+.carousel-control {top: 48%;}
+.carousel-caption h4, .carousel-caption p {color: #000; width: 80%;background:#efefef; padding: 14px 8px 0 ; margin:0 0 0 10% }
+.carousel-caption p {padding-bottom:14px; padding-top:8px}
+
+.navbar .nav > li > a {padding:8px 0; margin:0 8px}
+.alert h4{padding-bottom:8px; }
+.impInfo{line-height:1.5em;}
+.msg{text-align:center; font-size:12px;}
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.125);-moz-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.125); box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.125);}
+.alert{border-radius:0}
+.footer {padding: 18px;margin: 0;border-top: 1px solid #E5E5E5;background-color: whiteSmoke;}
+.detailView{padding:18px}
+.modal .close {background: url(css/images/quit.png) no-repeat 0 0;height: 24px;width: 24px;text-indent: -99999px;margin: 8px;}
+.carousel .item {-webkit-transition: opacity 3s; -moz-transition: opacity 3s; -ms-transition: opacity 3s; -o-transition: opacity 3s; transition: opacity 3s;}
+.carousel .active.left {left:0;opacity:0;z-index:2;}
+.carousel .next {left:0;opacity:1;z-index:1;}
+.navbar-inner {padding-left: 0;padding-right: 0;}
+.loadhome{cursor:pointer}
