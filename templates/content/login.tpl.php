@@ -17,12 +17,27 @@
                     <fieldset>
                       <div class="control-group">
                           <label>User or Email id: </label>
-                          <input type="text" placeholder="email" name="marchant_email" class="input-xlarge"/>
+                          <input type="text" placeholder="email" name="email" class="input-xlarge"/>
                       </div>
                       <div class="control-group">
                           <label>Password: </label>
-                          <input type="password" placeholder="password" name="marchant_password" class="input-xlarge"/>
+                          <input type="password" placeholder="password" name="password" class="input-xlarge"/>
                       </div>
+                        <div class="control-group">
+                            <h3>Please chose an option of bellow</h3>
+                            <select name="who_are" class="selectpicker" class="required">
+                            <option value="1">
+                                Affiliate
+                            </option>
+                            <option value="2">
+                                Marchant
+                            </option>
+                            <option value="3">
+                                Admin
+                            </option>
+                        </select>
+                        </div>
+                        
                       <button class="btn btn-active btn-success" type="submit">Log In</button>
                     </fieldset>
                   </form>
@@ -204,13 +219,15 @@
 	  <div class="tab-pane fade" id="s3">
               <div class="row">
 <div class="span12">
+    <form action="signup-affialiate.php" method="POST">
+    
     <h3>Affiliate Details</h3>
     <div class="row">
       <div class="span2">
           First Name:
       </div>
       <div class="span4">
-          <input type='text' placeholder="First name"/>
+          <input type='text' name="aff_name" placeholder="First name"/>
       </div>
     </div>
     <div class="row">
@@ -218,15 +235,15 @@
             Last name:
         </div>
         <div class="span4">
-            <input type='text' placeholder="Last name"/>
+            <input type='text'name="aff_lname" placeholder="Last name"/>
         </div>
     </div>
     <div class="row">
-        <div class="span2">
+        <div class="span2"> 
             Email Address:
         </div>
         <div class="span4">
-            <input type='text' placeholder="Email"/>
+            <input type='text' name="aff_email" placeholder="Email"/>
         </div>
     </div>
     <div class="row">
@@ -234,7 +251,7 @@
             Confirm Email:
         </div>
         <div class="span4">
-            <input type='text' placeholder="Confirm email"/>
+            <input type='text'name="aff_email" placeholder="Confirm email"/>
         </div>
     </div>
     <div class="row">
@@ -242,7 +259,7 @@
             Password:
         </div>
         <div class="span4">
-            <input type='password' name='' placeholder="password"/>
+            <input type='password' name='aff_password' placeholder="password"/>
         </div>
     </div>
     <div class="row">
@@ -250,7 +267,7 @@
             Confirm Password
         </div>
         <div class="span4">
-            <input type='text' name='' placeholder="Confirm passsword"/>
+            <input type='text' name='aff_password' placeholder="Confirm passsword"/>
         </div>
     </div>
     <div class="row">
@@ -258,7 +275,7 @@
             User Name:
         </div>
         <div class="span4">
-            <input type='text' placeholder="User name"/>
+            <input type='text' name="aff_username" placeholder="User name"/>
         </div>
     </div>
 
@@ -268,7 +285,7 @@
          Payable To:
       </div>
       <div class="span4">
-          <input type='text' placeholder="payment way"/>
+          <input type='text'name="payment" placeholder="payment way"/>
       </div>
     </div>
     <div class="row">
@@ -276,7 +293,7 @@
           Your Website:
       </div>
       <div class="span4">
-          <input type='text' value="http://"/>
+          <input type='text'name="website" value="http://"/>
       </div>
     </div>
     <div class="row">
@@ -284,15 +301,7 @@
           Address:
       </div>
       <div class="span4">
-          <input type='text' placeholder="address"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span2">
-          Address 2:
-      </div>
-      <div class="span4">
-          <input type='text' placeholder="address 2"/>
+          <input type='text'name="address" placeholder="address"/>
       </div>
     </div>
     <div class="row">
@@ -300,7 +309,7 @@
           Country:
       </div>
       <div class="span4">
-          <select class="dropdown">
+          <select class="dropdown" name="country">
               <option>fs</option>
               <option>fs</option>
               <option>fs</option>
@@ -312,7 +321,7 @@
           City:
       </div>
       <div class="span4">
-          <select class="dropdown">
+          <select class="dropdown" name="city">
               <option>fs</option>
               <option>fs</option>
               <option>fs</option>
@@ -324,7 +333,7 @@
           State/Province:
       </div>
       <div class="span4">
-          <input type='text' placeholder="State or Province"/>
+          <input type='text'name="state" placeholder="State or Province"/>
       </div>
     </div>
     <div class="row">
@@ -332,7 +341,7 @@
           ZIP:
       </div>
       <div class="span4">
-          <input type='number' placeholder="zip"/>
+          <input type='number' name="zip" placeholder="zip"/>
       </div>
     </div>
     <div class="row">
@@ -340,7 +349,7 @@
           Phone:
       </div>
       <div class="span4">
-          <input type='number' placeholder="phone number"/>
+          <input type='number'name="aff_contact" placeholder="phone number"/>
       </div>
     </div>
     <div class="row">
@@ -354,6 +363,7 @@
     <div class='row'>
         <br>
     </div>
+    </form>
 </div>
 </div>
 	  </div>

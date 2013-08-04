@@ -1,4 +1,5 @@
-<?php 
+<?php
+include_once '../include/config.php';
 if(!empty($_SESSION['marchant_logged']))
 {
     ?>
